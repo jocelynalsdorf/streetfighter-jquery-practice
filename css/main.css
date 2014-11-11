@@ -13,7 +13,32 @@ body {
 	height: 500px;
 }
 
+.ryu {
+	float: left;
+}
 
+.ryu-ready, .ryu-still, .ryu-throwing {
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing {
+	display: none;
+}
+
+.ryu-ready {
+	background-image: url("../images/ryu-ready-position.gif");
+}
+
+.ryu-still {
+	background-image: url("../images/ryu-standing-still.png");
+}
+.ryu-throwing {
+	background-image: url("../images/ryu-throwing-hadouken.gif");
+}
+.hadouken {
+	float: left;
+}
 
 /*layout*/
 
