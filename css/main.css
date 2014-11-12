@@ -4,6 +4,7 @@
 
 body {
 	background-color: #000;
+	font-family: "Shojumaru", cursive;
 
 }
 
@@ -41,6 +42,7 @@ body {
 }
 .hadouken {
 	float: left;
+	z-index: 35;
 }
 .ryu-cool {
 	background-image: url("../images/ryu-cool.gif");
@@ -58,7 +60,41 @@ body {
 	position: relative;
 	top: 167px;
 	left: -222px;
+}
 
+.text-instructions {
+	display: block;
+	float:right;
+	position: absolute;
+	left: 600px;
+	max-width: 455px;
+	height: 500px;
+	padding: 100px 75px 0 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.make-para {
+	
+	font-size: 30px;
+	display: inline-block;
+	float:  left;
+	padding-right: 100px;
+	padding-left:  35px;
+	padding
+	
+}
+
+.press-para {
+	
+	font-size: 30px;
+	display: inline-block;
+	padding-left: 100px;
+	padding-top: 55px;
+	position: relative;
+	left: 150px;
+	
+	
 }
 
 /*layout*/
