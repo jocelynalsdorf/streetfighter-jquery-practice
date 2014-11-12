@@ -4,15 +4,22 @@ $(document).ready(function() {
 		$(".ryu-ready").show();
 	})
 	.mouseleave(function() {
-		$(".ryu-still").show();
 		$(".ryu-ready").hide();
+		$(".ryu-still").show();
 	})
 	.mousedown(function() {
 		//play hadouken sound
 		$(".ryu-ready").hide();
 		$(".ryu-throwing").show();
 		$(".hadouken").show();
-		//show hadouken and animate to the right
+		$(".hadouken").animate(
+      {'left': '300px'},
+      500,
+      function() {
+        $(this).hide();
+        $(this).css('left', '-212px');
+      }
+    );
 	})
 	.mouseup(function() {
 		//Ryu goes back to his ready position
@@ -20,3 +27,5 @@ $(document).ready(function() {
 		$(".ryu-throwing").hide();
 	});
 });
+
+//.hadouken 
